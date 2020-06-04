@@ -4,3 +4,4 @@ dist
 .gitignore
 setup_react_project.sh
 .idea
+*.idea
