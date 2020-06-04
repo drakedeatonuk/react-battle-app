@@ -3,3 +3,4 @@ node_modules
 dist
 .gitignore
 setup_react_project.sh
+.idea
