@@ -1,5 +1,3 @@
-
-
 npm install react				# installs react
 npm install react-dom   # downloads the react-dom for rendering elements to. ReactDOM is separate because there are different end-user enviroments that can be rendered to (e.g. react-mobile)
 npm install webpack--save-dev		# downloads webpack module, used to create packages of all import commands from across a project
@@ -19,4 +17,4 @@ npm install react-router-dom --save-dev   # used to provide routing
 npm install query-string --save-dev   # used to parse query strings from URLs
 npm install @babel/plugin-proposal-class-properties --save-dev    # used to enable JS classes to be written using class properties (instance properties/functions, static variables/functions) (JS classes written more like Java classes)
 npm install babel-plugin-syntax-dynamic-import  # used to access lazy loading importing so that only segments of our app/imports are loaded when the user is accessing those Routes
-npm install copy-webpack-plugin --save-dec  # used to copy additional files into your webpack output
+npm install copy-webpack-plugin --save-dev  # used to copy additional files into your webpack output

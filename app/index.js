@@ -25,8 +25,7 @@ class App extends React.Component {
                 <ThemeProvider value={this.state}>
                     <div className={this.state.theme}>
                         <div className='container'>
-                            <Nav />
-
+                            <Nav/>
                             <React.Suspense fallback={<Loading />} >
                                 <Switch>
                                     <Route exact path='/' component={Popular} />

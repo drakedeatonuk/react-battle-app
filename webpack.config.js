@@ -21,9 +21,12 @@ module.exports = {
         new HtmlWebpackPlugin({    // generates an index.html page, puts it in our '/dist' folder with a <script> tag that references the newly created bundle
             template: 'app/index.html'
         }),
-        new CopyPlugin([
-            {from: './_redirects'}        // copies this file into the 'dist' bundle **
-        ])
+        new CopyPlugin({
+                patterns : [
+                    { from: '_redirects' }        // copies this file into the 'dist' bundle **
+                ]
+            }
+        )
         // new webpack.EnvironmentPlugin({ 'NODE_ENV': 'production' })     // sets 'process.env.NODE_ENV' to 'production' before deploying code. This tells React to build the project in 'production mode' which strips out dev features like warnings
     ],
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',     // IF NODE-ENV == 'production': set to 'production' ELSE set to development ('production mode' strips out dev features)
